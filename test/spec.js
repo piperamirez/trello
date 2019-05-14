@@ -19,7 +19,7 @@ describe('Trello', function () {
 
     describe('update Trello keys', () => {
         it('should change initial key and token', () => {
-            trello.setAuthentification('newkey', 'newToken');
+            trello.setAuthentication('newkey', 'newToken');
             
             trello.key.should.equal('newkey')
             trello.token.should.equal('newToken')
