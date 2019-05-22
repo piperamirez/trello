@@ -11,6 +11,11 @@ var Trello = function (key, token) {
     this.token = token;
 };
 
+Trello.prototype.setAuthentication = function (key, token) {
+    this.key = key;
+    this.token = token;
+};
+
 Trello.prototype.createQuery = function () {
     return {key: this.key, token: this.token};
 };

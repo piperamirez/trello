@@ -17,6 +17,15 @@ describe('Trello', function () {
         trello = new Trello('key', 'token');
     });
 
+    describe('update Trello keys', () => {
+        it('should change initial key and token', () => {
+            trello.setAuthentication('newkey', 'newToken');
+            
+            trello.key.should.equal('newkey')
+            trello.token.should.equal('newToken')
+        })
+    })
+
     describe('makeRequest', function () {
         var expect = chai.expect;
 
