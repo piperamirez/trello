@@ -51,7 +51,7 @@
   ],
   "dependencies": {
     "es6-promise": "~3.0.2",
-    "restler": "git+https://github.com/piperamirez/restler.git",
+    "restler": "piperamirez/restler",
     "object-assign": "~4.1.0"
   },
   "devDependencies": {
